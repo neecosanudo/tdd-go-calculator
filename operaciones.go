@@ -7,3 +7,7 @@ func Suma(numeros ...int) int {
 	}
 	return resultado
 }
+
+func Resta(a, b int) int {
+	return a - b
+}
