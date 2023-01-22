@@ -35,6 +35,15 @@ func TestResta(t *testing.T) {
 			t.Errorf("got %d, want %d", got, want)
 		}
 	})
+
+	t.Run("varios números", func(t *testing.T) {
+		got := Resta(100, 20, 50, 2, 2, 1)
+		want := 25
+
+		if got != want {
+			t.Errorf("got %d, want %d", got, want)
+		}
+	})
 }
 
 func assertMessageForSumaTest(t *testing.T, got, want int) {

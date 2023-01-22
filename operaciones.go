@@ -8,6 +8,14 @@ func Suma(numeros ...int) int {
 	return resultado
 }
 
-func Resta(a, b int) int {
-	return a - b
+func Resta(numeros ...int) int {
+	resultado := numeros[0]
+
+	for _, num := range numeros {
+		if num != numeros[0] {
+			resultado -= num
+		}
+	}
+
+	return resultado
 }
