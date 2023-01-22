@@ -21,4 +21,13 @@ func TestSuma(t *testing.T) {
 			t.Errorf("got %d, want %d", got, want)
 		}
 	})
+
+	t.Run("números negativos", func(t *testing.T) {
+		got := Suma(-3, -7, 10)
+		want := 0
+
+		if got != want {
+			t.Errorf("got %d, want %d", got, want)
+		}
+	})
 }
