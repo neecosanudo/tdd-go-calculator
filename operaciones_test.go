@@ -12,4 +12,13 @@ func TestSuma(t *testing.T) {
 			t.Errorf("got %d, want %d", got, want)
 		}
 	})
+
+	t.Run("varios números", func(t *testing.T) {
+		got := Suma(4, 5, 6, 10)
+		want := 25
+
+		if got != want {
+			t.Errorf("got %d, want %d", got, want)
+		}
+	})
 }
